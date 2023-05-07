@@ -80,17 +80,17 @@ function checkForm() {
         <td><%= km%></td>
     </tr>
         <th>관리번호</th>
-        <td>
-            <a href="detail.jsp?mgrNo=<%= wifi.getX_SWIFI_MGR_NO()%>&km=<%= km%>"><%= wifi.getX_SWIFI_MGR_NO()%>
-                <%= wifi.getX_SWIFI_MGR_NO()%>
-            </a>
-        </td>
+        <td><%= wifi.getX_SWIFI_MGR_NO()%></td>
     </tr>
         <th>자치구</th>
         <td><%= wifi.getX_SWIFI_WRDOFC()%></td>
     </tr>
         <th>와이파이명</th>
-        <td><%= wifi.getX_SWIFI_MAIN_NM()%></td>
+        <td>
+            <a href="detail.jsp?mgrNo=<%= wifi.getX_SWIFI_MGR_NO()%>&km=<%= km%>">
+                <%= wifi.getX_SWIFI_MAIN_NM()%>
+            </a>
+        </td>
     </tr>
         <th>도로명주소</th>
         <td><%= wifi.getX_SWIFI_ADRES1()%></td>
