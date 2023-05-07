@@ -129,13 +129,13 @@
       double km = Haversine.distance(latitude, longitude, x, y); %>
       <tr>
         <td><%= String.format("%.4f", km)%></td>
+        <td><%= wifi.getX_SWIFI_MGR_NO()%></td>
+        <td><%= wifi.getX_SWIFI_WRDOFC()%></td>
         <td>
           <a href="detail.jsp?mgrNo=<%= wifi.getX_SWIFI_MGR_NO()%>&km=<%= String.format("%.4f", km)%>">
-            <%= wifi.getX_SWIFI_MGR_NO()%>
+            <%= wifi.getX_SWIFI_MAIN_NM()%>
           </a>
         </td>
-        <td><%= wifi.getX_SWIFI_WRDOFC()%></td>
-        <td><%= wifi.getX_SWIFI_MAIN_NM()%></td>
         <td><%= wifi.getX_SWIFI_ADRES1()%></td>
         <td><%= wifi.getX_SWIFI_ADRES2()%></td>
         <td><%= wifi.getX_SWIFI_INSTL_FLOOR()%></td>
