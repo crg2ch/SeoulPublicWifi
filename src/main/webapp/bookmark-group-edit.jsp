@@ -58,7 +58,7 @@
   <table>
     <tr>
       <th>북마크 이름</th>
-      <td><input type="text" name="bookmarkName" value="<%=bookmarkGroup.getBookmarkName()%>"></td>
+      <td><input type="text" name="bookmarkName" value="<%=bookmarkGroup.getBookmarkName()%>" required></td>
     </tr>
     <tr>
       <th>순서</th>
