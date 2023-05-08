@@ -8,8 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet(name = "loadWifi", value = "/load-wifi")
-public class LoadWifi extends HelloServlet {
-    @Override
+public class LoadWifi {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
         SeoulAPI seoulAPI = new SeoulAPI();
         int rowCnt = seoulAPI.getData();
