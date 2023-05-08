@@ -1,6 +1,7 @@
 package com.mission1.mission1;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,7 +9,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet(name = "loadWifi", value = "/load-wifi")
-public class LoadWifi {
+public class LoadWifi extends HttpServlet {
+    @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
         SeoulAPI seoulAPI = new SeoulAPI();
         int rowCnt = seoulAPI.getData();
